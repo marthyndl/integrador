@@ -4,7 +4,7 @@ import { InfinitySpin } from "react-loader-spinner";
 import Products from "../sections/Products";
 import Filters from "../sections/Filters";
 
-const MainPage = () => {
+const MainPage: React.FC = (): JSX.Element | null => {
   const appContext = useContext(DataContext);
 
   if (!appContext) return null;

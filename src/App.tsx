@@ -2,7 +2,7 @@ import React from "react";
 import { DataProvider } from "./Context/DataContext";
 import MainPage from "./Components/pages/MainPage";
 
-function App() {
+const App: React.FC = (): JSX.Element => {
   return (
     <DataProvider>
       <div className="App">
@@ -10,6 +10,6 @@ function App() {
       </div>
     </DataProvider>
   );
-}
+};
 
 export default App;

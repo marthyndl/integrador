@@ -1,11 +1,7 @@
 import React, { useContext } from "react";
 import { DataContext } from "../../Context/DataContext";
 
-const Filters = () => {
-  /* const { onFilterChange } = useContext(
-    DataContext
-  ) as unknown as ProductContextType;
- */
+const Filters: React.FC = (): JSX.Element | null => {
   const appContext = useContext(DataContext);
 
   if (!appContext) return null;
